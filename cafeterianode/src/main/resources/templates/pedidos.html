@@ -1,0 +1,1281 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Pedidos | Cafeteriao Node</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/src/static/css/pedidos.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- =====================================================
+     NAVBAR
+====================================================== -->
+
+    <header class="navbar-area">
+
+        <nav class="navbar navbar-expand-lg">
+
+            <div class="container">
+
+                <a class="navbar-brand" href="index.html">
+
+                    <div class="logo"><i class="bi bi-cup-hot-fill"></i></div>
+
+                    <div class="brand-text">
+                        <strong>Cafeteriao</strong>
+                        <span>Node</span>
+                    </div>
+
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal">
+
+                    <span class="navbar-toggler-icon"></span>
+
+                </button>
+
+                <div class="collapse navbar-collapse" id="menuPrincipal">
+
+                    <ul class="navbar-nav ms-auto align-items-lg-center">
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="/index.html">
+                                Início
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link active" href="/templates/cardapio.html">
+                                Cardápio
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="/templates/sobre_nos.html">
+                                Sobre nós
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link nav-destaque" href="/templates/pedidos.html">
+                                Fazer pedido
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+
+
+    <!-- =====================================================
+     CABEÇALHO
+====================================================== -->
+
+    <section class="pedido-header">
+
+        <div class="container">
+
+            <div class="pedido-header-content">
+
+                <span class="mini-title">
+
+                    <i class="bi bi-cup-hot"></i>
+
+                    SEU MOMENTO COMEÇA AQUI
+
+                </span>
+
+
+                <h1>
+
+                    Faça seu
+
+                    <span>pedido.</span>
+
+                </h1>
+
+
+                <p>
+
+                    Escolha seus sabores favoritos
+                    e monte seu pedido com carinho.
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+     CONTEÚDO
+====================================================== -->
+
+    <main class="area-pedido">
+
+        <div class="container">
+
+            <div class="row g-4">
+
+
+                <!-- =================================================
+                 COLUNA PRINCIPAL
+            ================================================== -->
+
+                <div class="col-lg-8">
+
+
+                    <!-- DADOS DO CLIENTE -->
+
+                    <section class="pedido-card">
+
+                        <div class="card-title-area">
+
+                            <div class="numero">
+                                01
+                            </div>
+
+                            <div>
+
+                                <span>
+                                    SEUS DADOS
+                                </span>
+
+                                <h2>
+                                    Informações do pedido
+                                </h2>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="row g-3">
+
+
+                            <div class="col-md-6">
+
+                                <label class="form-label">
+                                    Nome completo
+                                </label>
+
+                                <input type="text" class="form-control" placeholder="Digite seu nome">
+
+                            </div>
+
+
+                            <div class="col-md-6">
+
+                                <label class="form-label">
+                                    Telefone
+                                </label>
+
+                                <input type="tel" class="form-control" placeholder="(00) 00000-0000">
+
+                            </div>
+
+
+                            <div class="col-12">
+
+                                <label class="form-label">
+                                    Observações
+                                </label>
+
+                                <textarea class="form-control" rows="3"
+                                    placeholder="Alguma observação sobre seu pedido?"></textarea>
+
+                            </div>
+
+                        </div>
+
+                    </section>
+
+
+
+                    <!-- =================================================
+                     PRODUTOS
+                ================================================== -->
+
+                    <section class="pedido-card">
+
+                        <div class="card-title-area">
+
+                            <div class="numero">
+                                02
+                            </div>
+
+                            <div>
+
+                                <span>
+                                    NOSSO CARDÁPIO
+                                </span>
+
+                                <h2>
+                                    Escolha seus favoritos
+                                </h2>
+
+                            </div>
+
+                        </div>
+
+
+
+                        <!-- CAFÉS -->
+
+                        <div class="categoria-titulo">
+
+                            <i class="bi bi-cup-hot-fill"></i>
+
+                            <h3>
+                                Cafés
+                            </h3>
+
+                        </div>
+
+
+                        <div class="row g-3">
+
+
+                            <!-- ESPRESSO -->
+
+                            <div class="col-md-6">
+
+                                <div class="produto">
+
+                                    <img src="/static/img/espresso.png" alt="Espresso Clássico">
+
+
+                                    <div class="produto-info">
+
+                                        <div>
+
+                                            <h4>
+                                                Espresso Clássico
+                                            </h4>
+
+                                            <p>
+                                                Café espresso intenso e aromático.
+                                            </p>
+
+                                        </div>
+
+
+                                        <div class="produto-bottom">
+
+                                            <strong>
+                                                R$ 6,00
+                                            </strong>
+
+                                            <input type="number" min="0" value="0" class="quantidade"
+                                                aria-label="Quantidade de Espresso Clássico">
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+
+
+                            <!-- AMERICANO -->
+
+                            <div class="col-md-6">
+
+                                <div class="produto">
+
+                                    <img src="/static/img/americano.png" alt="Café Americano">
+
+
+                                    <div class="produto-info">
+
+                                        <div>
+
+                                            <h4>
+                                                Café Americano
+                                            </h4>
+
+                                            <p>
+                                                Espresso suave com água quente.
+                                            </p>
+
+                                        </div>
+
+
+                                        <div class="produto-bottom">
+
+                                            <strong>
+                                                R$ 7,00
+                                            </strong>
+
+                                            <input type="number" min="0" value="0" class="quantidade"
+                                                aria-label="Quantidade de Café Americano">
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+
+
+                            <!-- CAFÉ COM LEITE -->
+
+                            <div class="col-md-6">
+
+                                <div class="produto">
+
+                                    <img src="/static/img/cafe-leite.png" alt="Café com Leite">
+
+
+                                    <div class="produto-info">
+
+                                        <div>
+
+                                            <h4>
+                                                Café com Leite
+                                            </h4>
+
+                                            <p>
+                                                Café equilibrado com leite cremoso.
+                                            </p>
+
+                                        </div>
+
+
+                                        <div class="produto-bottom">
+
+                                            <strong>
+                                                R$ 8,00
+                                            </strong>
+
+                                            <input type="number" min="0" value="0" class="quantidade"
+                                                aria-label="Quantidade de Café com Leite">
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+
+                        <!-- =================================================
+                         ESPECIAIS
+                    ================================================== -->
+
+                        <div class="categoria-titulo">
+
+                            <i class="bi bi-stars"></i>
+
+                            <h3>
+                                Especialidades da casa
+                            </h3>
+
+                        </div>
+
+
+                        <div class="row g-3">
+
+
+                            <!-- CAPPUCCINO -->
+
+                            <div class="col-md-6">
+
+                                <div class="produto">
+
+                                    <img src="/static/img/cappuccino.png" alt="Cappuccino Cremoso">
+
+
+                                    <div class="produto-info">
+
+                                        <div>
+
+                                            <h4>
+                                                Cappuccino Cremoso
+                                            </h4>
+
+                                            <p>
+                                                Café, leite e espuma cremosa.
+                                            </p>
+
+                                        </div>
+
+
+                                        <div class="produto-bottom">
+
+                                            <strong>
+                                                R$ 10,00
+                                            </strong>
+
+                                            <input type="number" min="0" value="0" class="quantidade"
+                                                aria-label="Quantidade de Cappuccino">
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+
+
+                            <!-- LATTE -->
+
+                            <div class="col-md-6">
+
+                                <div class="produto">
+
+                                    <img src="/static/img/latte.png" alt="Latte Especial">
+
+
+                                    <div class="produto-info">
+
+                                        <div>
+
+                                            <h4>
+                                                Latte Especial
+                                            </h4>
+
+                                            <p>
+                                                Espresso suave com leite vaporizado.
+                                            </p>
+
+                                        </div>
+
+
+                                        <div class="produto-bottom">
+
+                                            <strong>
+                                                R$ 11,00
+                                            </strong>
+
+                                            <input type="number" min="0" value="0" class="quantidade"
+                                                aria-label="Quantidade de Latte">
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+
+
+                            <!-- MOCHA -->
+
+                            <div class="col-md-6">
+
+                                <div class="produto">
+
+                                    <img src="/static/img/mocha.png" alt="Mocha">
+
+
+                                    <div class="produto-info">
+
+                                        <div>
+
+                                            <h4>
+                                                Mocha
+                                            </h4>
+
+                                            <p>
+                                                Espresso, leite e chocolate.
+                                            </p>
+
+                                        </div>
+
+
+                                        <div class="produto-bottom">
+
+                                            <strong>
+                                                R$ 12,00
+                                            </strong>
+
+                                            <input type="number" min="0" value="0" class="quantidade"
+                                                aria-label="Quantidade de Mocha">
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+
+                        <!-- =================================================
+                         GELADOS
+                    ================================================== -->
+
+                        <div class="categoria-titulo">
+
+                            <i class="bi bi-snow"></i>
+
+                            <h3>
+                                Cafés gelados
+                            </h3>
+
+                        </div>
+
+
+                        <div class="row g-3">
+
+
+                            <!-- CAFÉ GELADO -->
+
+                            <div class="col-md-6">
+
+                                <div class="produto">
+
+                                    <img src="/static/img/cafe-gelado.png" alt="Café Gelado">
+
+
+                                    <div class="produto-info">
+
+                                        <div>
+
+                                            <h4>
+                                                Café Gelado
+                                            </h4>
+
+                                            <p>
+                                                Café refrescante servido bem gelado.
+                                            </p>
+
+                                        </div>
+
+
+                                        <div class="produto-bottom">
+
+                                            <strong>
+                                                R$ 10,00
+                                            </strong>
+
+                                            <input type="number" min="0" value="0" class="quantidade">
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+
+
+                            <!-- ICED LATTE -->
+
+                            <div class="col-md-6">
+
+                                <div class="produto">
+
+                                    <img src="/static/img/iced-latte.png" alt="Iced Latte">
+
+
+                                    <div class="produto-info">
+
+                                        <div>
+
+                                            <h4>
+                                                Iced Latte
+                                            </h4>
+
+                                            <p>
+                                                Espresso, leite e gelo.
+                                            </p>
+
+                                        </div>
+
+
+                                        <div class="produto-bottom">
+
+                                            <strong>
+                                                R$ 12,00
+                                            </strong>
+
+                                            <input type="number" min="0" value="0" class="quantidade">
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+
+
+                            <!-- FRAPPUCCINO -->
+
+                            <div class="col-md-6">
+
+                                <div class="produto">
+
+                                    <img src="/static/img/frappuccino.png" alt="Frappuccino">
+
+
+                                    <div class="produto-info">
+
+                                        <div>
+
+                                            <h4>
+                                                Frappuccino
+                                            </h4>
+
+                                            <p>
+                                                Café gelado cremoso e refrescante.
+                                            </p>
+
+                                        </div>
+
+
+                                        <div class="produto-bottom">
+
+                                            <strong>
+                                                R$ 14,00
+                                            </strong>
+
+                                            <input type="number" min="0" value="0" class="quantidade">
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+
+                        <!-- =================================================
+                         DOCES
+                    ================================================== -->
+
+                        <div class="categoria-titulo">
+
+                            <i class="bi bi-cake2-fill"></i>
+
+                            <h3>
+                                Doces
+                            </h3>
+
+                        </div>
+
+
+                        <div class="row g-3">
+
+
+                            <!-- CHOCOLATE -->
+
+                            <div class="col-md-6">
+
+                                <div class="produto">
+
+                                    <img src="/static/img/cookie.png" alt="Cookie da Casa">
+
+
+                                    <div class="produto-info">
+
+                                        <div>
+
+                                            <h4>
+                                                Cookie da Casa
+                                            </h4>
+
+                                            <p>
+                                                Cookie artesanal com gotas de chocolate.
+                                            </p>
+
+                                        </div>
+
+
+                                        <div class="produto-bottom">
+
+                                            <strong>
+                                                R$ 8,00
+                                            </strong>
+
+                                            <input type="number" min="0" value="0" class="quantidade">
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+
+
+                            <!-- BOLO DE CHOCOLATE -->
+
+                            <div class="col-md-6">
+
+                                <div class="produto">
+
+                                    <img src="/static/img/bolo.png" alt="Bolo de Chocolate">
+
+
+                                    <div class="produto-info">
+
+                                        <div>
+
+                                            <h4>
+                                                Bolo de Chocolate
+                                            </h4>
+
+                                            <p>
+                                                Fatia de bolo fofinho com cobertura cremosa.
+                                            </p>
+
+                                        </div>
+
+
+                                        <div class="produto-bottom">
+
+                                            <strong>
+                                                R$ 10,00
+                                            </strong>
+
+                                            <input type="number" min="0" value="0" class="quantidade">
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+
+
+                            <!-- BROWNIE -->
+
+                            <div class="col-md-6">
+
+                                <div class="produto">
+
+                                    <img src="/static/img/brownie.png" alt="Brownie">
+
+
+                                    <div class="produto-info">
+
+                                        <div>
+
+                                            <h4>
+                                                Brownie
+                                            </h4>
+
+                                            <p>
+                                                Brownie macio com chocolate.
+                                            </p>
+
+                                        </div>
+
+
+                                        <div class="produto-bottom">
+
+                                            <strong>
+                                                R$ 10,00
+                                            </strong>
+
+                                            <input type="number" min="0" value="0" class="quantidade">
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </section>
+
+
+
+                    <!-- =================================================
+                     RECEBIMENTO
+                ================================================== -->
+
+                    <section class="pedido-card">
+
+                        <div class="card-title-area">
+
+                            <div class="numero">
+                                03
+                            </div>
+
+                            <div>
+
+                                <span>
+                                    RECEBIMENTO
+                                </span>
+
+                                <h2>
+                                    Como deseja receber?
+                                </h2>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="row g-3">
+
+
+                            <div class="col-md-6">
+
+                                <div class="opcao">
+
+                                    <input type="radio" name="recebimento" id="retirada" checked>
+
+                                    <label for="retirada">
+
+                                        <i class="bi bi-shop"></i>
+
+                                        <div>
+
+                                            <strong>
+                                                Retirar na cafeteria
+                                            </strong>
+
+                                            <small>
+                                                Venha buscar seu pedido.
+                                            </small>
+
+                                        </div>
+
+                                    </label>
+
+                                </div>
+
+                            </div>
+
+
+
+                            <div class="col-md-6">
+
+                                <div class="opcao">
+
+                                    <input type="radio" name="recebimento" id="entrega">
+
+                                    <label for="entrega">
+
+                                        <i class="bi bi-bicycle"></i>
+
+                                        <div>
+
+                                            <strong>
+                                                Receber em casa
+                                            </strong>
+
+                                            <small>
+                                                Entrega no endereço informado.
+                                            </small>
+
+                                        </div>
+
+                                    </label>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="endereco">
+
+                            <div class="row g-3">
+
+                                <div class="col-md-8">
+
+                                    <label class="form-label">
+                                        Endereço
+                                    </label>
+
+                                    <input type="text" class="form-control" placeholder="Rua e número">
+
+                                </div>
+
+
+                                <div class="col-md-4">
+
+                                    <label class="form-label">
+                                        CEP
+                                    </label>
+
+                                    <input type="text" class="form-control" placeholder="00000-000">
+
+                                </div>
+
+
+                                <div class="col-md-6">
+
+                                    <label class="form-label">
+                                        Bairro
+                                    </label>
+
+                                    <input type="text" class="form-control" placeholder="Seu bairro">
+
+                                </div>
+
+
+                                <div class="col-md-6">
+
+                                    <label class="form-label">
+                                        Complemento
+                                    </label>
+
+                                    <input type="text" class="form-control" placeholder="Apartamento, casa...">
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </section>
+
+
+
+                    <!-- =================================================
+                     PAGAMENTO
+                ================================================== -->
+
+                    <section class="pedido-card">
+
+                        <div class="card-title-area">
+
+                            <div class="numero">
+                                04
+                            </div>
+
+                            <div>
+
+                                <span>
+                                    PAGAMENTO
+                                </span>
+
+                                <h2>
+                                    Escolha a forma de pagamento
+                                </h2>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="row g-3">
+
+
+                            <div class="col-md-4">
+
+                                <div class="pagamento">
+
+                                    <input type="radio" name="pagamento" id="pix">
+
+                                    <label for="pix">
+
+                                        <i class="bi bi-qr-code"></i>
+
+                                        <span>
+                                            PIX
+                                        </span>
+
+                                    </label>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="col-md-4">
+
+                                <div class="pagamento">
+
+                                    <input type="radio" name="pagamento" id="cartao">
+
+                                    <label for="cartao">
+
+                                        <i class="bi bi-credit-card"></i>
+
+                                        <span>
+                                            Cartão
+                                        </span>
+
+                                    </label>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="col-md-4">
+
+                                <div class="pagamento">
+
+                                    <input type="radio" name="pagamento" id="dinheiro">
+
+                                    <label for="dinheiro">
+
+                                        <i class="bi bi-cash-coin"></i>
+
+                                        <span>
+                                            Dinheiro
+                                        </span>
+
+                                    </label>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </section>
+
+                </div>
+
+
+
+                <!-- =================================================
+                 RESUMO
+            ================================================== -->
+
+                <div class="col-lg-4">
+
+                    <aside class="resumo-card">
+
+                        <div class="resumo-topo">
+
+                            <div>
+
+                                <span>
+                                    SEU PEDIDO
+                                </span>
+
+                                <h2>
+                                    Resumo
+                                </h2>
+
+                            </div>
+
+                            <i class="bi bi-bag-heart"></i>
+
+                        </div>
+
+
+                        <div class="resumo-vazio">
+
+                            <div class="resumo-icon">
+
+                                <i class="bi bi-cup-hot"></i>
+
+                            </div>
+
+                            <h3>
+                                Seu pedido
+                            </h3>
+
+                            <p>
+                                Os produtos escolhidos
+                                aparecerão aqui.
+                            </p>
+
+                        </div>
+
+
+                        <div class="resumo-linha">
+
+                            <span>
+                                Subtotal
+                            </span>
+
+                            <strong>
+                                R$ 0,00
+                            </strong>
+
+                        </div>
+
+
+                        <div class="resumo-linha">
+
+                            <span>
+                                Entrega
+                            </span>
+
+                            <strong>
+                                A calcular
+                            </strong>
+
+                        </div>
+
+
+                        <div class="resumo-total">
+
+                            <span>
+                                Total
+                            </span>
+
+                            <strong>
+                                R$ 0,00
+                            </strong>
+
+                        </div>
+
+
+                        <button type="submit" class="btn-finalizar">
+
+                            Finalizar pedido
+
+                            <i class="bi bi-arrow-right"></i>
+
+                        </button>
+
+
+                        <p class="seguranca">
+
+                            <i class="bi bi-shield-check"></i>
+
+                            Seus dados serão utilizados
+                            apenas para o pedido.
+
+                        </p>
+
+                    </aside>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </main>
+
+
+
+    <!-- =====================================================
+     FOOTER
+====================================================== -->
+
+    <footer>
+
+        <div class="container">
+
+            <div class="footer-top">
+
+
+                <div class="footer-brand">
+
+                    <div class="logo">
+
+                        <i class="bi bi-cup-hot-fill"></i>
+
+                    </div>
+
+                    <div>
+
+                        <strong>
+                            Cafeteriao Node
+                        </strong>
+
+                        <p>
+                            Café, carinho e bons momentos.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="footer-links">
+
+                    <a href="/index.html">
+                        <i class="bi bi-house-door-fill"></i> Início
+                    </a>
+
+                    <a href="/templates/cardapio.html">
+                        <i class="bi bi-list"></i> Cardápio
+                    </a>
+
+                    <a href="/templates/sobre_nos.html">
+                        <i class="bi bi-info-circle-fill"></i> Sobre nós
+                    </a>
+
+                    <a href="/templates/pedidos.html">
+                        <i class="bi bi-truck"></i> Pedidos
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <div class="footer-bottom">
+
+                <small>
+                    © 2026 Cafeteriao Node
+                    • Feito com <i class="bi bi-suit-heart-fill"></i> e café.
+                </small>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+
+    <!-- Bootstrap JS apenas para o menu responsivo -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js">
+    </script>
+
+</body>
+
+</html>
