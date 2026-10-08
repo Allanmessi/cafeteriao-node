@@ -85,7 +85,7 @@ img {
 }
 
 .hero-sobre {
-  background: linear-gradient(rgba(32, 20, 13, 0.65), rgba(32, 20, 13, 0.65)),
+  background: linear-gradient(rgba(250, 176, 18, 0.65), rgba(32, 20, 13, 0.65)),
               url('/static/img/cafe.png') center/cover no-repeat;
   color: white;
   min-height: 420px;
